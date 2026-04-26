@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sayan Dutta | Premium Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#020617;color:#fff;overflow-x:hidden}
+
+/* BACKGROUND */
+canvas{position:fixed;top:0;left:0;z-index:-1}
+
+/* SECTION */
+.section{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+padding:60px 20px;
+opacity:0;
+transform:translateY(40px);
+transition:1s ease;
+}
+.section.show{opacity:1;transform:translateY(0)}
+.container{max-width:1100px;width:100%}
+
+/* HERO */
+.profile{
+width:180px;height:180px;border-radius:50%;
+border:4px solid transparent;
+background:linear-gradient(#020617,#020617) padding-box,
+linear-gradient(45deg,#38bdf8,#a855f7,#fbbf24) border-box;
+box-shadow:0 0 60px rgba(56,189,248,0.6);
+object-fit:cover;margin-bottom:20px;
+}
+.profile:hover{transform:scale(1.1) rotate(3deg)}
+
+h1{
+font-family:'Orbitron';
+font-size:4rem;
+text-align:center;
+background:linear-gradient(90deg,#38bdf8,#a855f7,#fbbf24);
+-webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.tagline{text-align:center;color:#e2e8f0;margin-top:10px}
+.quote{text-align:center;color:#94a3b8;margin-top:10px}
+
+/* CARD */
+.card{
+margin-top:25px;
+padding:30px;
+border-radius:20px;
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
+backdrop-filter:blur(20px);
+line-height:1.8;
+}
+
+/* HEAD */
+h2{
+color:#38bdf8;
+text-align:center;
+margin-bottom:25px;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+}
+.box{
+padding:25px;
+border-radius:20px;
+background:rgba(255,255,255,0.05);
+transition:0.3s;
+text-align:center;
+}
+.box:hover{transform:translateY(-8px);box-shadow:0 0 30px rgba(56,189,248,0.2)}
+
+/* PROJECTS */
+.project h3{color:#fbbf24;margin-bottom:10px}
+
+/* SKILLS */
+.skill{margin:10px 0}
+.bar{height:8px;background:#1e293b;border-radius:20px}
+.fill{height:100%;background:linear-gradient(90deg,#38bdf8,#a855f7)}
+
+/* CONTACT */
+.contact{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+}
+.contact-left,.contact-right{
+flex:1;
+min-width:250px;
+}
+
+/* BUTTON */
+.btn{
+display:block;
+padding:12px;
+margin:10px 0;
+border-radius:25px;
+text-align:center;
+text-decoration:none;
+font-weight:600;
+}
+.btn:hover{transform:scale(1.05)}
+
+/* THANK */
+.thank{text-align:center;font-size:3rem;font-family:'Orbitron'}
+
+</style>
+</head>
+
+<body>
+
+<canvas id="bg"></canvas>
+
+<!-- HERO -->
+<div class="section">
+<div class="container" style="text-align:center">
+<h1>SAYAN DUTTA</h1>
+<div class="tagline">ECE ENGINEER | WEB DEVELOPER | INNOVATOR | NEW LEARNER</div>
+<div class="quote">"Engineering transforms imagination into reality"</div>
+</div>
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+<div class="container">
+<h2>ABOUT ME</h2>
+<div class="card">
+I am an Electronics and Communication Engineering student passionate about building real-world systems integrating hardware and software. My core expertise lies in VLSI, embedded systems, DSP, IoT, and communication engineering. Alongside this, I work on web development, AI, and ML to expand my technical depth. I focus on building scalable, efficient, and impactful projects. My goal is to become a highly skilled engineer contributing to advanced technological innovation.
+</div>
+</div>
+</div>
+
+<!-- PROJECTS -->
+<div class="section">
+<div class="container">
+<h2>PROJECTS</h2>
+<div class="grid">
+<div class="box project"><h3>GNSS Weather System</h3><p>Real-time monitoring using GNSS and sensors.</p></div>
+<div class="box project"><h3>Snake Game</h3><p>Python-based logic game.</p></div>
+<div class="box project"><h3>Krishna Store</h3><p>E-commerce UI design.</p></div>
+<div class="box project"><h3>Portfolio Website</h3><p>Animated responsive portfolio.</p></div>
+</div>
+</div>
+</div>
+
+<!-- INTERNSHIPS -->
+<div class="section">
+<div class="container">
+<h2>INTERNSHIPS</h2>
+<div class="grid">
+<div class="box">
+<h3>CTTC Bhubaneswar</h3>
+<p>VLSI Internship focused on CMOS design, layout, and simulation.</p>
+</div>
+<div class="box">
+<h3>1Stop.ai</h3>
+<p>IoT Internship working on connected systems and real-world applications.</p>
+</div>
+<div class="box">
+<h3>Navitro Consultancy</h3>
+<p>GNSS Internship working on satellite-based navigation systems.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- CERTIFICATIONS -->
+<div class="section">
+<div class="container">
+<h2>CERTIFICATIONS</h2>
+<div class="grid">
+<div class="box">Python Programming</div>
+<div class="box">Java Programming</div>
+<div class="box">C++ Programming</div>
+<div class="box">Ethical Hacking</div>
+<div class="box">IoT Certification</div>
+<div class="box">Data Science</div>
+</div>
+</div>
+</div>
+
+<!-- SKILLS -->
+<div class="section">
+<div class="container">
+<h2>SKILLS</h2>
+
+<div class="skill">C<div class="bar"><div class="fill" style="width:90%"></div></div></div>
+<div class="skill">C++<div class="bar"><div class="fill" style="width:85%"></div></div></div>
+<div class="skill">Python<div class="bar"><div class="fill" style="width:85%"></div></div></div>
+<div class="skill">HTML/CSS/JS<div class="bar"><div class="fill" style="width:90%"></div></div></div>
+<div class="skill">AI & ML<div class="bar"><div class="fill" style="width:70%"></div></div></div>
+<div class="skill">GNSS<div class="bar"><div class="fill" style="width:75%"></div></div></div>
+<div class="skill">VLSI<div class="bar"><div class="fill" style="width:80%"></div></div></div>
+<div class="skill">Embedded Systems<div class="bar"><div class="fill" style="width:78%"></div></div></div>
+
+</div>
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+<div class="container">
+<h2>CONTACT</h2>
+
+<div class="card contact">
+
+<div class="contact-left">
+<h3>Get in Touch</h3>
+<p>I am open to internships and opportunities. Feel free to contact me.</p>
+<p><b>Phone:</b> 9907400655</p>
+<p><b>Email:</b> duttasayan5002@gmail.com</p>
+</div>
+
+<div class="contact-right">
+<a href="#" class="btn" style="background:#38bdf8;color:#000">Resume</a>
+<a href="#" class="btn" style="background:#a855f7;color:#fff">GitHub</a>
+<a href="#" class="btn" style="background:#fbbf24;color:#000">LinkedIn</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- THANK -->
+<div class="section">
+<div class="container thank">
+THANK YOU 🚀
+<div class="quote">"Keep learning, keep building"</div>
+</div>
+</div>
+
+<script>
+// scroll animation
+const sec=document.querySelectorAll('.section');
+window.addEventListener('scroll',()=>{
+sec.forEach(s=>{
+if(s.getBoundingClientRect().top<window.innerHeight-100){
+s.classList.add('show')
+}
+})
+})
+
+// particles
+const c=document.getElementById('bg');
+const ctx=c.getContext('2d');
+c.width=window.innerWidth;
+c.height=window.innerHeight;
+
+let p=[];
+for(let i=0;i<60;i++){
+p.push({x:Math.random()*c.width,y:Math.random()*c.height})
+}
+
+function draw(){
+ctx.clearRect(0,0,c.width,c.height);
+ctx.fillStyle="#38bdf8";
+p.forEach(pt=>{
+pt.y+=0.5;
+if(pt.y>c.height)pt.y=0;
+ctx.fillRect(pt.x,pt.y,2,2);
+});
+requestAnimationFrame(draw);
+}
+draw();
+</script>
+
+</body>
+</html>
